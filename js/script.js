@@ -166,3 +166,41 @@ switch (true) {
         console.log('You are younger than 18');
 }
 
+let mathsMark = 77/100;
+let physicsMark = 70/100;
+let englishMark = 50/100;
+
+let avgeMark = ((mathsMark + physicsMark + englishMark)/3);
+let well = avgeMark >= 80/100
+let good = avgeMark >= 70/100
+let okay = avgeMark >= 50/100
+let whorkHard = avgeMark >= 0
+
+
+switch (true) {
+    case well:
+        console.log(`You did well your average was ${avgeMark}"`);
+        break;
+    case good:
+        console.log(`You average was good, it was ${averageMark}"`);
+        break;
+    case okay:
+        console.log(`Your average was okay, it was ${averageMark}"`);
+        break;
+    case whorkHard:
+        console.log(`You must work harder next time`);
+        break;
+    default:
+        break;
+        console.log('Looks like something went wrong :(, Try Again');
+}
+
+
+let informationAboutCars = []
+
+informationAboutCars.push(car1, car2, car3, car4)
+console.log(informationAboutCars);
+
+if (coolCars[1] === 'BMW') {
+    console.log('The item does not appear in the array');
+}

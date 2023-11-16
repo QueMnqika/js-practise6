@@ -187,7 +187,34 @@ switch (true) {
 //         69%-50%(message='Your average was okay, it was ..'), 
 //         49%-0% (message ='You must work harder next time')
 
+let mathsMark = 77/100;
+let physicsMark = 70/100;
+let englishMark = 50/100;
 
+let avgeMark = ((mathsMark + physicsMark + englishMark)/3);
+let well = avgeMark >= 80/100
+let good = avgeMark >= 70/100
+let okay = avgeMark >= 50/100
+let whorkHard = avgeMark >= 0
+
+
+switch (true) {
+    case well:
+        console.log(`You did well your average was ${avgeMark}"`);
+        break;
+    case good:
+        console.log(`You average was good, it was ${averageMark}"`);
+        break;
+    case okay:
+        console.log(`Your average was okay, it was ${averageMark}"`);
+        break;
+    case whorkHard:
+        console.log(`You must work harder next time`);
+        break;
+    default:
+        break;
+        console.log('Looks like something went wrong :(, Try Again');
+}
 
 // 19. USE the variable that you created in question 9 and use a while loop to print each iteration to the console and at that same instance, increase the variable used by 1
 
@@ -272,7 +299,7 @@ console.log(device4);
 //         this.transmission,
 //         this.drivetrains
 
-function cars(brand, model, year, transmission, drivetrains) {
+function Cars(brand, model, year, transmission, drivetrains) {
     this.brand = brand;
     this.model = model;
     this.year = year;
@@ -294,9 +321,15 @@ console.log(car4);
 
 // 27. After, push the 4 objects to an array called 'informationAboutCars'.
 
+let informationAboutCars = []
 
+informationAboutCars.push(car1, car2, car3, car4)
 
 // 28. Create a function that can be used 'globally', the function should return a sentence containing all the properties used inside the object, eg 'The car brand Ford has a model of a Figo that was produced in 2019. It is a manual and is a front wheel drive'
+
+function globalVar(Cars) {
+    
+}
 
 
 
@@ -305,6 +338,9 @@ console.log(car4);
 
 // 30. Use the array in question10 that you created and create a conditional statement that check if 'BMW' appears in the array. The console should return 'This item does appear in the array' or 'The item does not appear in the array'
 
+if (coolCars[1] === 'BMW') {
+    console.log('The item does not appear in the array');
+}
 
 
 // 31. Declare an array and give it a value of [5, 18, 14, 16, 2, 1].
